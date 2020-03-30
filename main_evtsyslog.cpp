@@ -113,7 +113,7 @@ bool LoadSettingsFromRegistry() {
 			portNum = PORT_NUMBER_DEFAULT;
 			result = false;
 		}
-		syslogPort = htons(portNum);
+		syslogPort = htons(static_cast<u_short>(portNum));
 	}
 	RegCloseKey(key);
 	return result;
@@ -207,7 +207,7 @@ DWORD __stdcall EvtCallback(EVT_SUBSCRIBE_NOTIFY_ACTION Action, PVOID UserContex
 	}
 	EvtClose(metadata);
 	EvtClose(renderCtx);
-
+	
 	return 0;
 }
 
