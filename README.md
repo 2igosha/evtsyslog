@@ -8,9 +8,7 @@ Installation: evtsyslog.exe install
 
 Settings: *HKLM\\Software\\Evtsyslog*
 
-    ------ ------------ -----------------------------
     REG_SZ *SyslogHost* remote hostname or IP address
 
     REG_SZ *SyslogPort* remote UDP port number
-    ------ ------------ -----------------------------
 
