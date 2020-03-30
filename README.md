@@ -6,9 +6,9 @@ Installation: evtsyslog.exe install
 
 (will copy the exe file to %APPDATA%\\Local\\Programs and install the service)
 
-Settings: *HKLM\\Software\\Evtsyslog*
+Settings: _HKLM\\Software\\Evtsyslog_
 
-    REG_SZ *SyslogHost* remote hostname or IP address
+  REG_SZ _SyslogHost_ remote hostname or IP address
 
-    REG_SZ *SyslogPort* remote UDP port number
+  REG_SZ _SyslogPort_ remote UDP port number
 
