@@ -27,7 +27,7 @@ To install to %APPDATA%\Local\Programs and create a service:
 	evtsyslog.exe install
 
 Settings are read on startup from registry:
-	HKLM\Evtsyslog
+	HKLM\Software\Evtsyslog
 		REG_SZ SyslogHost - remote host name or IP address, default none
 		REG_SZ SyslogPort - port number, default 514
 */
